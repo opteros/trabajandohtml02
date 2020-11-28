@@ -2,6 +2,7 @@ body{
  /* aqui va mi agregado al body hola */
   height: height: 100%; /* Used to enable scrolling */
   background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
+	font-family: 'DM Serif Display', serif;
 }
 img.wid{
 	width: 50%;
