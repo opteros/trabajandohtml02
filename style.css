@@ -2,7 +2,7 @@ body{
  /* aqui va mi agregado al body hola */
   height: height: 100%; /* Used to enable scrolling */
   background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
-font-family: 'DM Serif Display', serif;
+font-family: 'Darker Grotesque', sans-serif;
 }
 img.wid{
 	width: 50%;
@@ -49,6 +49,14 @@ img.tit{
 }
 .esconder{
 	display:none;
+}
+
+.section-heading{
+	font-family: 'DM Serif Display', serif;
+}
+
+h4{
+	font-family: 'DM Serif Display', serif;
 }
 @media (max-width:700px){
 	img.wid{
