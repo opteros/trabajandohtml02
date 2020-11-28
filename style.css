@@ -58,6 +58,9 @@ img.tit{
 h4{
 	font-family: 'DM Serif Display', serif;
 }
+h1{
+	font-family: 'DM Serif Display', serif;
+}
 @media (max-width:700px){
 	img.wid{
 		width: 100%;
