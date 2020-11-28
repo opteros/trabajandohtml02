@@ -1,89 +1,67 @@
-body{
- /* aqui va mi agregado al body hola */
-  height: height: 100%; /* Used to enable scrolling */
-  background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
-font-family: 'Darker Grotesque', sans-serif;
-}
-img.wid{
-	width: 50%;
-	background-size: cover;
-}
-img.map{
-	height: 40%;
-	background-size: cover;
-}
-img.ico{
-	height: 100%;
-}
-img.tit{
-	width: 100%;
-}
-.plant{
-	width: 100%;
-	height: auto;
-}
-.titulo{
-	padding-top: 40%;
-}
-.lalo{
-	padding-left: 20%;
-	padding-bottom: 3%;
-}
-.titext{
-	position: absolute;
-	top: 50%;
- 	width: 100%;
-    text-align: center;
-}
-.titextminus{
-	position: absolute;
-	top: 45%;
- 	width: 100%;
-    text-align: center;
-}
-.titextplus{
-	position: absolute;
-	top: 58%;
- 	width: 100%;
-    text-align: center;
-}
-.esconder{
-	display:none;
+body {
+    min-height: 100%;
+    background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
+    color: #001;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
 }
 
-.section-heading{
-	font-family: 'DM Serif Display', serif;
+header#titular {
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url("img/bichos.gif");
 }
 
-h4{
-	font-family: 'DM Serif Display', serif;
+header#titular div.container {
+    height: 80vh; /*  Misma altura que el header */
 }
-h1{
-	font-family: 'DM Serif Display', serif;
+
+header#titular div.container div.row div.col h1,
+header#titular div.container div.row div.col h2 {
+    line-height: 1;
 }
-@media (max-width:700px){
-	img.wid{
-		width: 100%;
-	}
-	img.tit{
-		width: 200%;
-	}
-	img.map{
-	width:100%;
-    align-items: center;
-    justify-content: center;
-	}
-	.plant{
-		width: 200%;
-		top: 20px;
-	}
-	.titext{
-		top: 30%;
-	}
-	.titextminus{
-		top: 25%;
-	}
-	.titextplus{
-		top: 40%;
-	}
-} /* Aqui termina el media pa celu */
+
+h1,
+h3,
+h4 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+dl {
+    margin: 23vh auto;
+}
+
+dt {
+    float: left;
+}
+
+dd {
+    float: left;
+}
+
+@media (max-width: 767.98px) {
+    dl {
+        margin: 5vw;
+    }
+    dl,
+    dt,
+    dd {
+        text-align: center;
+        clear: both;
+    }
+}
+
+/* para las imágenes del cerebro (?) */
+
+img.anatomia {
+    max-width: 50vw;
+    margin: 1rem auto;
+}
