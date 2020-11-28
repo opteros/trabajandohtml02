@@ -2,7 +2,6 @@ body{
  /* aqui va mi agregado al body hola */
   height: height: 100%; /* Used to enable scrolling */
   background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
-	font-family: 'DM Serif Display', serif;
 }
 img.wid{
 	width: 50%;
@@ -24,8 +23,6 @@ img.tit{
 }
 .titulo{
 	padding-top: 40%;
-	
-font-family: 'DM Serif Display', serif;
 }
 .lalo{
 	padding-left: 20%;
@@ -61,16 +58,12 @@ font-family: 'DM Serif Display', serif;
 	}
 	img.map{
 	width:100%;
-	top:25%;
     align-items: center;
     justify-content: center;
 	}
 	.plant{
 		width: 200%;
 		top: 20px;
-	}
-	.lalo{
-		top: 25%;
 	}
 	.titext{
 		top: 30%;
