@@ -83,7 +83,7 @@
 
                 
                     <div class="row">
-                    <div class="col-4" style="z-index:-20;">
+                    <div class="col-4" style="z-index:-999;">
                  <!--   <img class="sticky-top tit d-none d-sm-block mapajs" style="top:-20%;" src="img/mapachile5.svg"> -->
                     <img class="sticky-top map d-sm-none mapajs" src="img/chilemap2-xs.jpg"> 
                     </div>
@@ -92,7 +92,7 @@
                        
                         <!--<div class="timeline-panel">-->
                         <!--    <div class="timeline-heading"> -->
-                            <div class="lalo sticky-top">
+                            <div class="lalo sticky-top mapajs">
                                 <h4 class="subheading">Efectos Neurotóxicos</h4>
                             <img class="map" src="img/cerebro.png">
                             <div><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
@@ -104,7 +104,7 @@
                         
                         <!--<div class="timeline-panel"> -->
                         <!--    <div class="timeline-heading"> -->
-                                <div class="sticky-top lalo">
+                                <div class="sticky-top lalo mapajs2">
                                 <h4 class="subheading">Efectos Genotóxicos y Cancerígenos</h4>
                                 <img class="map" src="img/cerebro.png">
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium </p></div>
@@ -125,8 +125,6 @@
                         </div>
                    <!-- </li> -->
                 </div> <!-- div class column  -->
-                
-                    
                 </div> <!-- div class row -->
                  </section>
         <!-- Efecto en el ser humano -->
@@ -149,7 +147,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- hola profe perdón por la ineficiencia del código, pero funciona c: -->
         <script>
                 $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
@@ -169,14 +167,24 @@
                     $("#lejos").addClass("esconder");
                     $("#muylejos").addClass("esconder");
                 }
-                if (scroll >= 3500){
+                if (scroll >= 3500 && scroll <= 5000){
                     if ($(".mapajs").css("opacity")==0) {
-                        $(".mapajs").fadeTo(1500,1);
+                        $(".mapajs").fadeTo(500,1);
                     }
                 }
                 else {
                      if ($(".mapajs").css("opacity")==1){
-                    $(".mapajs").fadeTo(1500,0);
+                    $(".mapajs").fadeTo(500,0);
+                    }
+                }
+                if (scroll >= 4500 && scroll <= 6000){
+                    if ($(".mapajs2").css("opacity")==0) {
+                        $(".mapajs2").fadeTo(500,1);
+                    }
+                }
+                else {
+                     if ($(".mapajs2").css("opacity")==1){
+                    $(".mapajs2").fadeTo(500,0);
                     }
                 }
             });
