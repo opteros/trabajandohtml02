@@ -5,11 +5,11 @@ body{
 font-family: 'Darker Grotesque', sans-serif;
 }
 img.wid{
-	width: 50%;
+	width: 100%;
 	background-size: cover;
 }
 img.map{
-	height: 40%;
+	height: 30%;
 	background-size: cover;
 }
 img.ico{
@@ -27,7 +27,7 @@ img.tit{
 }
 .lalo{
 	padding-left: 20%;
-	padding-bottom: 3%;
+	padding-bottom: 20%;
 }
 .titext{
 	position: absolute;
@@ -50,6 +50,10 @@ img.tit{
 .esconder{
 	display:none;
 }
+.mapajs{
+	/*opacity:0;*/
+	/* background-image:url('img/chilemap2.png'); */
+}
 
 .section-heading{
 	font-family: 'DM Serif Display', serif;
@@ -57,25 +61,37 @@ img.tit{
 
 h4{
 	font-family: 'DM Serif Display', serif;
+	font-size: 30px;
 }
 h1{
 	font-family: 'DM Serif Display', serif;
+}
+p{
+	font-size: 24px;
 }
 @media (max-width:700px){
 	img.wid{
 		width: 100%;
 	}
 	img.tit{
-		width: 200%;
+		height: 100%;
 	}
 	img.map{
 	width:100%;
     align-items: center;
     justify-content: center;
 	}
+	p{
+	font-size: 18px;
+	font-weight: 700;
+	}
+	h4{
+	font-size: 24px;
+	}
 	.plant{
 		width: 200%;
 		top: 20px;
+		margin-left:-50px;
 	}
 	.titext{
 		top: 30%;
