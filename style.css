@@ -1,8 +1,10 @@
+
 body{
  /* aqui va mi agregado al body hola */
   height: height: 100%; /* Used to enable scrolling */
   background: linear-gradient(55deg, #ddedf3 0%, #ddedf3 51%, #ddedf3 85%);
 font-family: 'Darker Grotesque', sans-serif;
+overflow-x:hidden;
 }
 img.wid{
 	width: 100%;
@@ -53,6 +55,12 @@ img.tit{
 .mapajs{
 	/*opacity:0;*/
 	/* background-image:url('img/chilemap2.png'); */
+}
+.fondomapa{
+	width:105%;
+	position:absolute;
+	top:4250px;
+	z-index:-21;
 }
 
 .section-heading{
